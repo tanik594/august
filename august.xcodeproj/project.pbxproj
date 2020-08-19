@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		230113BD24ECF372001A796D /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230113BC24ECF372001A796D /* InformationView.swift */; };
 		230113BF24ECF3B4001A796D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230113BE24ECF3B4001A796D /* NotificationView.swift */; };
+		230113C124ECFB23001A796D /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230113C024ECFB23001A796D /* TopView.swift */; };
+		230113C324ECFEB2001A796D /* SearchByCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230113C224ECFEB2001A796D /* SearchByCategoryView.swift */; };
+		230113C524ED00FA001A796D /* SearchByNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230113C424ED00FA001A796D /* SearchByNameView.swift */; };
 		2350A9D424DA2AAF0085E35C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350A9D324DA2AAF0085E35C /* AppDelegate.swift */; };
 		2350A9D624DA2AAF0085E35C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350A9D524DA2AAF0085E35C /* SceneDelegate.swift */; };
 		2350A9D824DA2AAF0085E35C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350A9D724DA2AAF0085E35C /* ContentView.swift */; };
@@ -22,6 +25,9 @@
 /* Begin PBXFileReference section */
 		230113BC24ECF372001A796D /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		230113BE24ECF3B4001A796D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		230113C024ECFB23001A796D /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		230113C224ECFEB2001A796D /* SearchByCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByCategoryView.swift; sourceTree = "<group>"; };
+		230113C424ED00FA001A796D /* SearchByNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByNameView.swift; sourceTree = "<group>"; };
 		2350A9D024DA2AAF0085E35C /* august.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = august.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2350A9D324DA2AAF0085E35C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2350A9D524DA2AAF0085E35C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +74,9 @@
 				2350A9D524DA2AAF0085E35C /* SceneDelegate.swift */,
 				2350A9D724DA2AAF0085E35C /* ContentView.swift */,
 				2350A9E724DA2E410085E35C /* HomeView.swift */,
+				230113C024ECFB23001A796D /* TopView.swift */,
+				230113C224ECFEB2001A796D /* SearchByCategoryView.swift */,
+				230113C424ED00FA001A796D /* SearchByNameView.swift */,
 				2350A9E924DA2EF50085E35C /* SettingView.swift */,
 				230113BC24ECF372001A796D /* InformationView.swift */,
 				230113BE24ECF3B4001A796D /* NotificationView.swift */,
@@ -158,12 +167,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230113C524ED00FA001A796D /* SearchByNameView.swift in Sources */,
 				2350A9D424DA2AAF0085E35C /* AppDelegate.swift in Sources */,
 				2350A9EA24DA2EF50085E35C /* SettingView.swift in Sources */,
 				2350A9E824DA2E410085E35C /* HomeView.swift in Sources */,
 				230113BF24ECF3B4001A796D /* NotificationView.swift in Sources */,
 				230113BD24ECF372001A796D /* InformationView.swift in Sources */,
+				230113C324ECFEB2001A796D /* SearchByCategoryView.swift in Sources */,
 				2350A9D624DA2AAF0085E35C /* SceneDelegate.swift in Sources */,
+				230113C124ECFB23001A796D /* TopView.swift in Sources */,
 				2350A9D824DA2AAF0085E35C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

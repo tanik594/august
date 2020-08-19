@@ -25,10 +25,10 @@ struct HomeView: View {
                 Text("福山市ごみ処理状況")
                 Text("ゴミの出し方・分け方")
                 HStack {
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    NavigationLink(destination: SearchByCategoryView()) {
                         Text("分類から調べる")
                     }
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    NavigationLink(destination: SearchByNameView()) {
                         Text("名前から調べる")
                     }
                 }
