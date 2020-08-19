@@ -19,6 +19,14 @@ struct ContentView: View {
                 Image(systemName: "gear")
                 Text("設定")
             }.tag(2)
+            NotificationView().tabItem {
+                Image(systemName: "bell")
+                Text("通知")
+            }.tag(3)
+            InformationView().tabItem {
+                Image(systemName: "info.circle")
+                Text("情報")
+            }.tag(4)
         }
     }
 }

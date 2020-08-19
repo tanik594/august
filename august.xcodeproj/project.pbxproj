@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230113BD24ECF372001A796D /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230113BC24ECF372001A796D /* InformationView.swift */; };
+		230113BF24ECF3B4001A796D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230113BE24ECF3B4001A796D /* NotificationView.swift */; };
 		2350A9D424DA2AAF0085E35C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350A9D324DA2AAF0085E35C /* AppDelegate.swift */; };
 		2350A9D624DA2AAF0085E35C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350A9D524DA2AAF0085E35C /* SceneDelegate.swift */; };
 		2350A9D824DA2AAF0085E35C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350A9D724DA2AAF0085E35C /* ContentView.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230113BC24ECF372001A796D /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		230113BE24ECF3B4001A796D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		2350A9D024DA2AAF0085E35C /* august.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = august.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2350A9D324DA2AAF0085E35C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2350A9D524DA2AAF0085E35C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 				2350A9D724DA2AAF0085E35C /* ContentView.swift */,
 				2350A9E724DA2E410085E35C /* HomeView.swift */,
 				2350A9E924DA2EF50085E35C /* SettingView.swift */,
+				230113BC24ECF372001A796D /* InformationView.swift */,
+				230113BE24ECF3B4001A796D /* NotificationView.swift */,
 				2350A9D924DA2AB30085E35C /* Assets.xcassets */,
 				2350A9DE24DA2AB30085E35C /* LaunchScreen.storyboard */,
 				2350A9E124DA2AB30085E35C /* Info.plist */,
@@ -155,6 +161,8 @@
 				2350A9D424DA2AAF0085E35C /* AppDelegate.swift in Sources */,
 				2350A9EA24DA2EF50085E35C /* SettingView.swift in Sources */,
 				2350A9E824DA2E410085E35C /* HomeView.swift in Sources */,
+				230113BF24ECF3B4001A796D /* NotificationView.swift in Sources */,
+				230113BD24ECF372001A796D /* InformationView.swift in Sources */,
 				2350A9D624DA2AAF0085E35C /* SceneDelegate.swift in Sources */,
 				2350A9D824DA2AAF0085E35C /* ContentView.swift in Sources */,
 			);
