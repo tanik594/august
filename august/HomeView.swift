@@ -38,7 +38,7 @@ struct HomeView: View {
                 minHeight: 0,
                 maxHeight: .infinity,
                 alignment: .topLeading
-        ).background(Color.red)
+        ).background(Color(hex: 0xFFD3F3))
     }
 }
 
