@@ -21,13 +21,11 @@ struct SearchByCategoryView: View {
     @State var csvArr = [Animal]()
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("分類から調べる")
-                List(csvArr) {animal in
-                    NavigationLink(destination: AnimalView(name: animal.name, height: animal.height, weight: animal.weight)) {
-                        Text("\(animal.name)")
-                    }
+        VStack {
+            Text("分類から調べる")
+            List(csvArr) {animal in
+                NavigationLink(destination: AnimalView(name: animal.name, height: animal.height, weight: animal.weight)) {
+                    Text("\(animal.name)")
                 }
             }
         }
