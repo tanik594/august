@@ -9,24 +9,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var tabNumber = 0
     var body: some View {
-        TabView {
+        TabView(selection: $tabNumber) {
             TopView().tabItem {
-                Image(systemName: "house")
+                tabNumber == 0 ? Image(systemName: "house") : Image(systemName: "bell")
                 Text("ホーム")
-            }.tag(1)
+            }
+            .tag(0)
             SettingView().tabItem {
-                Image(systemName: "gear")
+                tabNumber == 1 ? Image(systemName: "gear") : Image(systemName: "bell")
                 Text("設定")
-            }.tag(2)
+            }.tag(1)
             NotificationView().tabItem {
-                Image(systemName: "bell")
+                tabNumber == 2 ? Image(systemName: "bell") : Image(systemName: "gear")
                 Text("通知")
-            }.tag(3)
+            }.tag(2)
             InformationView().tabItem {
-                Image(systemName: "info.circle")
+                tabNumber == 3 ? Image(systemName: "info.circle") : Image(systemName: "gear")
                 Text("情報")
-            }.tag(4)
+            }.tag(3)
         }
     }
 }
