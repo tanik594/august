@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var isActiveSubView1 = false
+    @State var isActiveSubView2 = false
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
@@ -25,11 +27,30 @@ struct HomeView: View {
                 Text("福山市ごみ処理状況")
                 Text("ゴミの出し方・分け方")
                 HStack {
-                    NavigationLink(destination: SearchByCategoryView()) {
-                        Text("分類から調べる")
+                    NavigationLink(destination: SearchByCategoryView(), isActive: $isActiveSubView1) {
+                        EmptyView()
                     }
-                    NavigationLink(destination: SearchByNameView()) {
-                        Text("名前から調べる")
+                    Button(action: {
+                        self.isActiveSubView1 = true
+                    }) {
+                        HStack {
+                            Image("searchBtn")
+                                .renderingMode(.original)
+                            Text("分類から調べる")
+                        }
+                    }
+                    NavigationLink(destination: SearchByNameView(), isActive: $isActiveSubView2) {
+                        EmptyView()
+                    }
+                    Button(action: {
+                        self.isActiveSubView2 = true
+                    }) {
+                        HStack {
+                            Image("searchBtn")
+                                .renderingMode(.original)
+                                .background(isActiveSubView2 ? Color.blue.opacity(0.5) : Color.blue.opacity(0))
+                            Text("名前から調べる")
+                        }
                     }
                 }
             }
