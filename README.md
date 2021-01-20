@@ -1,1 +1,0 @@
-Setteing_areas
