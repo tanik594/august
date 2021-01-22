@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var tabNumber = 0
+    @State var tabNumber = UserDefaults.standard.value(forKey: "address") as? String != nil ? 0 : 1
     var body: some View {
         TabView(selection: $tabNumber) {
             TopView().tabItem {
