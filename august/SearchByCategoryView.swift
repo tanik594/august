@@ -19,14 +19,25 @@ struct Animal: Identifiable {
 struct SearchByCategoryView: View {
     @State var csvLines = [String]()
     @State var csvArr = [Animal]()
+    @State var selectNum: Int = -1
     
     var body: some View {
         VStack {
             Text("分類から調べる")
             List(csvArr) {animal in
-                NavigationLink(destination: AnimalView(name: animal.name, height: animal.height, weight: animal.weight)) {
-                    Text("\(animal.name)")
+                Button(action: {
+                    selectNum = animal.id
+                }) {
+                    HStack {
+                        if (animal.id == selectNum) {
+                            Image(systemName: "checkmark.circle.fill")
+                        }
+                        Text("\(animal.name)")
+                    }
                 }
+                /*NavigationLink(destination: AnimalView(name: animal.name, height: animal.height, weight: animal.weight)) {
+                    Text("\(animal.name)")
+                }*/
             }
         }
         .onAppear(perform: {
