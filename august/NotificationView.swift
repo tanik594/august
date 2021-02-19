@@ -12,10 +12,10 @@ struct NotificationView: View {
     
     func setNotification() -> Void {
         //日時を指定する
-        //let triggerDate = DateComponents(month:2, day:16, hour:18, minute:33, second: 0)
+        //let triggerDate = DateComponents(month:2, day:16, hour:20, minute:12, second: 0)
         //let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
         //曜日と時間を指定して繰り返す 3=火曜日
-        let triggerDate = DateComponents(hour:18, minute:56, weekday:3)
+        let triggerDate = DateComponents(hour:20, minute:37, weekday:3)
         let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: true)
         
         let content = UNMutableNotificationContent()

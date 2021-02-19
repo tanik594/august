@@ -22,7 +22,7 @@ struct HomeView: View {
                     Text("金")
                     Text("土")
                     Text("日")
-                }
+                }.padding(.top, 40.0)
                 Text("本日4月5日（金）の改修")
                 Text("福山市ごみ処理状況")
                 Text("ゴミの出し方・分け方")
@@ -60,6 +60,7 @@ struct HomeView: View {
                 maxHeight: .infinity,
                 alignment: .topLeading
         ).background(Color(hex: 0xFFD3F3))
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
