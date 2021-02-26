@@ -31,6 +31,13 @@
 		EB0B6BAF25DFC3A300937FD8 /* sample_widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EB0B6BAB25DFC3A200937FD8 /* sample_widget.intentdefinition */; };
 		EB0B6BB025DFC3A300937FD8 /* sample_widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EB0B6BAB25DFC3A200937FD8 /* sample_widget.intentdefinition */; };
 		EB0B6BB325DFC3A300937FD8 /* sample-widgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EB0B6BA225DFC3A100937FD8 /* sample-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EBEAB5C425E87C290055BDDB /* RKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEAB5BD25E87C290055BDDB /* RKViewController.swift */; };
+		EBEAB5C525E87C290055BDDB /* RKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEAB5BE25E87C290055BDDB /* RKManager.swift */; };
+		EBEAB5C625E87C290055BDDB /* RKWeekdayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEAB5BF25E87C290055BDDB /* RKWeekdayHeader.swift */; };
+		EBEAB5C725E87C290055BDDB /* RKMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEAB5C025E87C290055BDDB /* RKMonth.swift */; };
+		EBEAB5C825E87C290055BDDB /* RKCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEAB5C125E87C290055BDDB /* RKCell.swift */; };
+		EBEAB5C925E87C290055BDDB /* RKColorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEAB5C225E87C290055BDDB /* RKColorSettings.swift */; };
+		EBEAB5CA25E87C290055BDDB /* RKDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEAB5C325E87C290055BDDB /* RKDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +91,13 @@
 		EB0B6BAB25DFC3A200937FD8 /* sample_widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = sample_widget.intentdefinition; sourceTree = "<group>"; };
 		EB0B6BAC25DFC3A300937FD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB0B6BAE25DFC3A300937FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBEAB5BD25E87C290055BDDB /* RKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKViewController.swift; sourceTree = "<group>"; };
+		EBEAB5BE25E87C290055BDDB /* RKManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKManager.swift; sourceTree = "<group>"; };
+		EBEAB5BF25E87C290055BDDB /* RKWeekdayHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKWeekdayHeader.swift; sourceTree = "<group>"; };
+		EBEAB5C025E87C290055BDDB /* RKMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKMonth.swift; sourceTree = "<group>"; };
+		EBEAB5C125E87C290055BDDB /* RKCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKCell.swift; sourceTree = "<group>"; };
+		EBEAB5C225E87C290055BDDB /* RKColorSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKColorSettings.swift; sourceTree = "<group>"; };
+		EBEAB5C325E87C290055BDDB /* RKDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +158,7 @@
 				2350A9D924DA2AB30085E35C /* Assets.xcassets */,
 				2350A9DE24DA2AB30085E35C /* LaunchScreen.storyboard */,
 				2350A9E124DA2AB30085E35C /* Info.plist */,
+				EBEAB5BC25E87C290055BDDB /* Manager */,
 				23200C3B24ED2D9A00056982 /* dataList.csv */,
 				2350A9DB24DA2AB30085E35C /* Preview Content */,
 			);
@@ -176,6 +191,20 @@
 				EB0B6BAE25DFC3A300937FD8 /* Info.plist */,
 			);
 			path = "sample-widget";
+			sourceTree = "<group>";
+		};
+		EBEAB5BC25E87C290055BDDB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EBEAB5BD25E87C290055BDDB /* RKViewController.swift */,
+				EBEAB5BE25E87C290055BDDB /* RKManager.swift */,
+				EBEAB5BF25E87C290055BDDB /* RKWeekdayHeader.swift */,
+				EBEAB5C025E87C290055BDDB /* RKMonth.swift */,
+				EBEAB5C125E87C290055BDDB /* RKCell.swift */,
+				EBEAB5C225E87C290055BDDB /* RKColorSettings.swift */,
+				EBEAB5C325E87C290055BDDB /* RKDate.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,8 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBEAB5C625E87C290055BDDB /* RKWeekdayHeader.swift in Sources */,
 				2381064324F673B200B7437F /* AnimalView.swift in Sources */,
+				EBEAB5C425E87C290055BDDB /* RKViewController.swift in Sources */,
+				EBEAB5C525E87C290055BDDB /* RKManager.swift in Sources */,
 				230113C524ED00FA001A796D /* SearchByNameView.swift in Sources */,
+				EBEAB5C725E87C290055BDDB /* RKMonth.swift in Sources */,
 				2350A9D424DA2AAF0085E35C /* AppDelegate.swift in Sources */,
 				2350A9EA24DA2EF50085E35C /* SettingView.swift in Sources */,
 				2350A9E824DA2E410085E35C /* HomeView.swift in Sources */,
@@ -290,10 +323,13 @@
 				230113BD24ECF372001A796D /* InformationView.swift in Sources */,
 				230113C324ECFEB2001A796D /* SearchByCategoryView.swift in Sources */,
 				2350A9D624DA2AAF0085E35C /* SceneDelegate.swift in Sources */,
+				EBEAB5C925E87C290055BDDB /* RKColorSettings.swift in Sources */,
 				230113C124ECFB23001A796D /* TopView.swift in Sources */,
 				234C3753250797E80036F9AE /* SampleView.swift in Sources */,
+				EBEAB5C825E87C290055BDDB /* RKCell.swift in Sources */,
 				2381064124F6703E00B7437F /* Extensions.swift in Sources */,
 				EB0B6BB025DFC3A300937FD8 /* sample_widget.intentdefinition in Sources */,
+				EBEAB5CA25E87C290055BDDB /* RKDate.swift in Sources */,
 				2350A9D824DA2AAF0085E35C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
